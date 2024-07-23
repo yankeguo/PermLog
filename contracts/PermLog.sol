@@ -10,19 +10,15 @@ contract PermLog is AccessControlDefaultAdminRules {
         _grantRole(LOGGER_ROLE, msg.sender);
     }
 
-    event Log(string indexed kind, string indexed name, bytes content);
+    event Log(bytes32 indexed kind, bytes32 indexed name, bytes content);
 
-    function _log(
-        string memory kind,
-        string memory name,
-        bytes memory content
-    ) internal {
+    function _log(bytes32 kind, bytes32 name, bytes memory content) internal {
         emit Log(kind, name, content);
     }
 
     function log(
-        string memory kind,
-        string memory name,
+        bytes32 kind,
+        bytes32 name,
         bytes memory content
     ) external onlyRole(LOGGER_ROLE) {
         _log(kind, name, content);
