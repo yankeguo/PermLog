@@ -1,0 +1,24 @@
+{
+  "name": "@yankeguo/permlog",
+  "version": "0.1.0",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "author": {
+    "name": "GUO YANKE",
+    "email": "hi@yankeguo.com"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/node": "^20.14.11",
+    "@yankeguo/hardhat-trezor": "^0.1.4",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.6",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
